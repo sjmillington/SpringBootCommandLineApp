@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <!-- need to make a seperate info and warn/error output so we get more info for the warn channel when it goes wrong-->
+    <Appenders>
+            <Console name="Console" target="SYSTEM_OUT" >
+                <ThresholdFilter level="INFO" onMatch="ACCEPT" onMismatch="DENY" />
+                <PatternLayout pattern="[%d{HH:mm:ss}] %highlight{[%level]}{WARN=yellow, INFO=green} %msg%n"/>
+            </Console>
+            <File name="fileApp" fileName="${sys:user.home}/logs/appTest.log"  createOnDemand="true" append="false">
+                <ThresholdFilter level="DEBUG" />
+                <PatternLayout pattern="%d %p %c{1.}.class [%t] %m%n" />
+            </File>
+    </Appenders>
+    <Loggers>
+        <Logger name="org.springframework" level="WARN"/>
+        <Root level="DEBUG">
+            <AppenderRef ref="Console" />
+            <AppenderRef ref="fileApp"/>
+        </Root>
+    </Loggers>
+</Configuration>
