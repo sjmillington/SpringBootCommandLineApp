@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="co.uk.sjmillington.service.GreetingServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-04-23T10:53:26" hostname="equipment" time="0.164">
+  <properties/>
+  <testcase name="checkGreetingReturnsCorrectString" classname="co.uk.sjmillington.service.GreetingServiceTest" time="0.164"/>
+  <system-out><![CDATA[  _____            _             ____              _    _____ _      _____
+ / ____|          (_)           |  _ \            | |  / ____| |    |_   _|
+| (___  _ __  _ __ _ _ __   __ _| |_) | ___   ___ | |_| |    | |      | |
+ \___ \| '_ \| '__| | '_ \ / _` |  _ < / _ \ / _ \| __| |    | |      | |
+ ____) | |_) | |  | | | | | (_| | |_) | (_) | (_) | |_| |____| |____ _| |_
+|_____/| .__/|_|  |_|_| |_|\__, |____/ \___/ \___/ \__|\_____|______|_____|
+       | |                  __/ |
+       |_|                 |___/
+
+[11:53:25] ?[32m[INFO]?[m Starting GreetingServiceTest on equipment with PID 28852 (started by sam in /home/sam/IdeaProjects/SpringBootCLI)
+[11:53:25] ?[32m[INFO]?[m No active profile set, falling back to default profiles: default
+[11:53:26] ?[32m[INFO]?[m Started GreetingServiceTest in 0.641 seconds (JVM running for 1.989)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

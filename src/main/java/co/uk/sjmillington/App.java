@@ -1,6 +1,6 @@
 package co.uk.sjmillington;
 
-import co.uk.sjmillington.service.MyService;
+import co.uk.sjmillington.service.GreetingService;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -13,10 +13,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @Log4j2
 public class App implements CommandLineRunner {
 
-    private MyService service;
+    private GreetingService service;
 
     @Autowired
-    public App(MyService service) {
+    public App(GreetingService service) {
         this.service = service;
     }
 
